@@ -7,6 +7,8 @@ body {
     text-rendering: optimizeSpeed;
 }
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -14,5 +16,9 @@ html{
     font-size: 62.5%;
 }
 :root{
-    --primary: #fe2c55
+    --primary: #fe2c55;
+
+    //default Layout
+    --default-layout-headder-height: 60px;
+    --default-layout-width: 1150px;
 }
