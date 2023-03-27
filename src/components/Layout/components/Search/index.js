@@ -68,7 +68,7 @@ function Search() {
                         <FontAwesomeIcon icon={faCircleXmark} />
                     </button>
                 )}
-                {/* <FontAwesomeIcon className={cx('loading')} icon={faSpinner} /> */}
+                <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />
 
                 <button className={cx('search-btn')}>
                     <SearchIcon />
