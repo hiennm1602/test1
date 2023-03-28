@@ -3,6 +3,7 @@ import Button from '~/components/Button';
 import styles from './Header.module.scss'
 import classNames from 'classnames/bind';
 import images from '~/assets/images'
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisVertical, faEarthAsia, faCircleQuestion, faKeyboard, faCoins, faGear, faUser, faSignOut } from '@fortawesome/free-solid-svg-icons';
 
@@ -95,7 +96,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <img src={images.logo} alt='TikTok' />
+                <Link to="/"><img src={images.logo} alt='TikTok' /></Link>
 
                 <Search />
 
@@ -115,6 +116,7 @@ function Header() {
                             <Tippy delay={[0, 50]} content='Inbox' placement='bottom'>
                                 <button className={cx('action-btn')}>
                                     <InboxIcon />
+                                    <span className={cx('badge')}>12</span>
                                 </button>
                             </Tippy>
                         </>
