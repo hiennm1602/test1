@@ -7,6 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Search.module.scss'
 import classNames from 'classnames/bind';
 import { SearchIcon } from '~/components/Icons';
+import { useDebounce } from '~/hooks';
+import * as searchService from '~/apiServices/searchService';
+
 
 const cx = classNames.bind(styles)
 
@@ -16,24 +19,23 @@ function Search() {
     const [showResult, setShowResult] = useState(true)
     const [loading, setLoading] = useState(false)
 
+    const debounced = useDebounce(searchValue, 500)
+
     const inputRef = useRef()
-    
+
     useEffect(() => {
-        if (!searchValue.trim()) {
+        if (!debounced.trim()) {
             setSearchResult([])
             return;
         }
-        setLoading(true)
-        fetch(`https://tiktok.fullstack.edu.vn/api/users/search?q=${encodeURIComponent(searchValue)}&type=less`)
-            .then((res) => res.json())
-            .then((res) => {
-                setSearchResult(res.data)
-                setLoading(false)
-            })
-            .catch(() => {
-                setLoading(false)
-            })
-    }, [searchValue])
+        
+        const fetchApi = async () =>{
+            const result = await searchService.search(debounced);
+            setSearchResult(result)
+            setLoading(false)
+        }
+        fetchApi()
+    }, [debounced])
 
     const handleClear = () => {
         setSearchValue('')
@@ -41,14 +43,14 @@ function Search() {
     }
 
     const handleInputSpace = (e) => {
-        if(e.target.value.startsWith(' ')){
+        if (e.target.value.startsWith(' ')) {
             setSearchValue('')
         }
-        else{
+        else {
             setSearchValue(e.target.value)
         }
     }
-    
+
 
 
     const handleHideResult = () => {
