@@ -137,8 +137,8 @@ function Header() {
                         {currentUser ? (
                             //component custom
                             <Image
-                                src='https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/a187c4dfa896a5ea449a4c5d3927b20a~c5_100x100.jpeg?x-expires=1680076800&x-signature=FnnSvD9WlukUxgD7KJ%2BDaDmoFc8%3D'
                                 className={cx('user-avatar')}
+                                src='https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/a187c4dfa896a5ea449a4c5d3927b20a~c5_100x100.jpeg?x-expires=1680249600&x-signature=s8hF8g3N195U%2FxFcTTg2C%2Frh5sQ%3D'
                                 alt='mixi'
                             />
                         ) : (
