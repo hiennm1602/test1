@@ -5,12 +5,33 @@
     font-size: 1.8rem;
     font-weight: 700;
     border-radius: 4px;
+    color: var(--text-color);
     transition: background-color ease-in-out 200ms;
 
     &:hover{
         background-color: rgba(22, 24, 35, .03);
     }
+    &.active{
+        color: var(--primary);
+        
+        .icon{
+            display: none;
+        }
+
+        .active-icon{
+            display: flex;;
+        }
+    }
 }
 .title{
     margin-left: 10px;
+}
+
+
+.icon, .active-icon{
+    display: flex;
+}
+
+.active-icon{
+    display: none;
 }
