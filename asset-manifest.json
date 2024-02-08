@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/tiktok-clone/static/css/main.8d70fe7c.css",
+    "main.js": "/tiktok-clone/static/js/main.632abc10.js",
+    "static/js/787.fe00223f.chunk.js": "/tiktok-clone/static/js/787.fe00223f.chunk.js",
+    "static/media/The_Last_Spark_Wallpaper.mp4": "/tiktok-clone/static/media/The_Last_Spark_Wallpaper.c8d7c9d3b6a5d223ddb8.mp4",
+    "static/media/ProximaNova-Semibold.woff2": "/tiktok-clone/static/media/ProximaNova-Semibold.db7972dbe0b808f96bae.woff2",
+    "static/media/sofiapro-bold.woff2": "/tiktok-clone/static/media/sofiapro-bold.1d7186488612ac20891f.woff2",
+    "static/media/Proxima-Nova-Bold.woff2": "/tiktok-clone/static/media/Proxima-Nova-Bold.8dd475cbc90552d85f91.woff2",
+    "static/media/Proxima-Nova-Regular.woff2": "/tiktok-clone/static/media/Proxima-Nova-Regular.6c83037ae28747e6d774.woff2",
+    "static/media/logo.svg": "/tiktok-clone/static/media/logo.32240da386e797b384f71ab2f028f3b3.svg",
+    "index.html": "/tiktok-clone/index.html",
+    "main.8d70fe7c.css.map": "/tiktok-clone/static/css/main.8d70fe7c.css.map",
+    "main.632abc10.js.map": "/tiktok-clone/static/js/main.632abc10.js.map",
+    "787.fe00223f.chunk.js.map": "/tiktok-clone/static/js/787.fe00223f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d70fe7c.css",
+    "static/js/main.632abc10.js"
+  ]
+}
